@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Compra de Entradas - Radiohead</title>
+</head>
+<body background="https://www.laganzua.net/conciertosbdnew/2024/radiohead-madrid-flyer.jpg" >
+
+    <h1> Compra tu entrada para el concierto de Radiohead </h1>
+    <p>Por favor, completa los siguientes datos para realizar tu compra:</p>
+
+    <form>
+
+    <h3>Datos personales</h3>
+    <label>Nombre completo:</label><br>
+    <input type="text" name="nombre" placeholder="Escribe tu nombre completo" required><br><br>
+
+    <label>Correo electrónico:</label><br>
+    <input type="email" name="correo" placeholder="ejemplo@correo.com" required><br><br>
+
+    <label>Teléfono:</label><br>
+    <input type="tel" name="telefono" placeholder="Ej: 3001234567" required><br><br>
+
+    
+    <h3>Detalles del concierto</h3>
+
+    <label>Ciudad del concierto:</label><br>
+    <select name="ciudad">
+        <option value="bogota">Bogota</option>
+        <option value="medellin">Medellín</option>
+        <option value="cali">Cali</option>
+        <option value="barranquilla">Barranquilla</option>
+    </select><br><br>
+
+    <label>Tipo de entrada:</label><br>
+    <input type="radio" name="entrada" value="general" required> General<br>
+    <input type="radio" name="entrada" value="vip"> VIP<br>
+    <input type="radio" name="entrada" value="platino"> Platino<br><br>
+
+    <label>Cantidad de entradas:</label><br>
+    <input type="number" name="cantidad" min="1" max="6" value="1" required><br><br>
+
+    
+    <h3>Método de pago</h3>
+    <label>Selecciona tu método de pago:</label><br>
+    <input type="radio" name="pago" value="tarjeta" required> Tarjeta de credito / debito<br>
+    <input type="radio" name="pago" value="transferencia"> Transferencia bancaria<br>
+    <input type="radio" name="pago" value="efectivo"> Pago en efectivo (punto autorizado)<br><br>
+
+    
+    <h3>Información adicional</h3>
+    <label>Comentarios o peticiones especiales:</label><br>
+    <textarea name="comentarios" rows="4" cols="40" placeholder="Ej: Necesito acceso para silla de ruedas..."></textarea><br><br>
+
+
+    <input type="submit" value="Comprar entrada">
+    <input type="reset" value="Borrar formulario">
+
+</form>
+
+<br><hr>
+
+<h3>Quieres volva al inicio?</h3>
+    <button type="button"> <a href="#">Volver</a></button>
+
+    <h2>¿Quieres conocer la Discografia de Radiohead?</h2>
+    <button type="button"><a href="#">aqui</a> </button>
+
+
+</body>
+</html>
