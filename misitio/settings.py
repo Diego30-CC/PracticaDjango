@@ -36,9 +36,7 @@ DEBUG = True
 ALLOWED_HOSTS = ['*']
 
 # CSRF_TRUSTED_ORIGINS = ['https://*']
-CSRF_TRUSTED_ORIGINS = [
-    os.getenv("DOMINIO" ,"http://127.0.0.1:8000/")
-    ]
+CSRF_TRUSTED_ORIGINS = [os.getenv("DOMINIO")]
 
 
 # Application definition
