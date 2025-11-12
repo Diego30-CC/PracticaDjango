@@ -36,7 +36,7 @@ DEBUG = True
 ALLOWED_HOSTS = ['*']
 
 # CSRF_TRUSTED_ORIGINS = ['https://*']
-CSRF_TRUSTED_ORIGINS = [os.getenv("DOMINIO" ,"http://practica01-hfb5cfdec8hjbne9.eastus2-01.azurewebsites.net/")]
+CSRF_TRUSTED_ORIGINS = [os.getenv("CSRF_TRUSTED_ORIGINS" )]
 
 
 # Application definition
